@@ -7,7 +7,10 @@ import (
 )
 
 type envVars struct{
-	DebugLevel string `envconfig:"DEBUG_LEVEL" required:"true"`
+	DebugLevel     string `envconfig:"DEBUG_LEVEL" required:"true"`
+	TelegramToken  string `envconfig:"TELEGRAM_TOKEN" required:"true"`
+	BotDebugStatus string `envconfig:"BOT_DEBUG" required:"true"`
+	BotBuffer      string `envconfig:"BOT_BUFFER" required:"true"`
 }
 
 var EnvVars envVars

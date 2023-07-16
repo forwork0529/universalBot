@@ -1,5 +1,13 @@
 package api
 
+import (
+	"fmt"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"io/ioutil"
+	"log"
+	"strings"
+)
+
 func informativeAnswer(bot *tgbotapi.BotAPI, update tgbotapi.Update,  newMsgText, path string)  {
 
 	simpleAnswerText(bot, update, newMsgText)
